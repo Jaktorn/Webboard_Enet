@@ -68,7 +68,7 @@ session_start();
                 echo "<tr><td> $row[0]  <a href=post.php?id=$row[2] style=text-decoration:none>$row[1]</a><br>$row[3] - $row[4]</td>";
                 // เพิ่มปุ่มลบโพสต์
                 if (isset($_SESSION['id']) && $_SESSION['role'] == 'a') {
-                    echo "<td><a href='delete.php?id=$row[2]' class='btn btn-danger btn-sm' onclick='return myFunction();'><i class='bi bi-trash'></i></a></td>";
+                    echo "<td><a href='delete.php?id=$row[2]' class='btn btn-danger btn-sm mt-2 float-end me-3' onclick='return myFunction();'><i class='bi bi-trash'></i></a></td>";
                 }
                 echo "</tr>";
             }
